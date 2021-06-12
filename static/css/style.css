@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: rgb(81, 135, 235);
+    width: 30%;
+    height: 10em;
+    margin: 10em auto;
+}
+
+#title {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#chatbox {
+    background-color: rgb(107, 154, 240);
+    padding-top: 1em;
+    line-height: 1.7em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+
+input[type="text"] {
+    width: 60%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    color: cornflowerblue;
+}
+
+#select {
+    width: 60%;
+}

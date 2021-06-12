@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="/static/css/index.css">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="chat.jpg" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live chat app</title>
+        <script defer src="http://localhost:5000/socket.io/socket.io.js"></script>
+        <script defer src="/static/js/client.js"></script>
+    </head>
+    <style>
+  
+</style>
+    <body>
+        <div id="container">
+            <div id="navbar">
+                <h2>😮ChatCord</h2>
+                <form action="client.html">
+                    <button>Leave Room</button>
+                </form>
+            </div>
+            <div id="boxmessage">
+                <div id="left">
+                    <div class="user">
+                        <div id="roomane">
+                            <p>🚹 Room Name</p>
+                        </div>
+                        <div class="roomname">
+
+                        </div>
+                        <div id="user1">
+                            <p>🦸‍♂️ User</p>
+                        </div>
+                        <div class="username">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="right">
+                    <!-- <div class="message">
+                        <p class="dateTime">212:21:212</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div> -->
+                </div>
+            </div>
+            <form action="#" id="chat-form">
+                <div id="input">
+                    <input type="text" name="username" id="msg"
+                        placeholder="Enter
+                        message">
+                    <input type="submit" id=sendbtn value="💠 send">
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/5.1.0/qs.min.js"></script>
+</html>

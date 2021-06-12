@@ -1,6 +1,5 @@
 
-const socket = io("http://localhost:5000");
-
+const socket = io("http://wechating-app.herokuapp.com/");
 const chatform = document.getElementById("chat-form");
 const right = document.querySelector(".right");
 
@@ -10,7 +9,7 @@ const { username, room } = Qs.parse(location.search.slice(1));
 socket.emit("joinChat", { username, room });
 
 socket.on("message", message => {
-    console.log(message)
+    // console.log(message)
 
     outputMessage(message);
 

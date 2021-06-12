@@ -19,17 +19,15 @@ app.use('/static', express.static(path.join(__dirname, "static")));
 
 const botName = "chatCord Bot"
 // when client connect
-console.log(formatMessages())
+// console.log(formatMessages())
 
 io.on("connection", socket => {
-    console.log("new user conn")
+    // console.log("new user conn")
 
     socket.on("joinChat", ({ username, room }) => {
 
         const user = userJoin(socket.id, username, room);
         socket.join(user.room);
-
-
 
         // listen for chat message
 

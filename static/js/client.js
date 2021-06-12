@@ -1,5 +1,5 @@
 
-const socket = io("http://wechating-app.herokuapp.com/");
+const socket = io("https://wechating-app.herokuapp.com/");
 const chatform = document.getElementById("chat-form");
 const right = document.querySelector(".right");
 

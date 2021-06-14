@@ -2,7 +2,7 @@ const express = require("express");
 const formatMessages = require("./utils/messages")
 
 const { userJoin, getCurrentUser, userLeave, getRoomUser } = require("./utils/users")
-const hostname=0.0.0.0;
+const hostname="0.0.0.0";
 const app = express();
 const http = require("http");
 const path = require("path");
